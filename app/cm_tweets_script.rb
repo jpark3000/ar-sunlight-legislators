@@ -9,7 +9,11 @@ end
 
 def load_cm_tweets
   cm_with_twitter.each do |cm|
-    tweet_array = cm.get_tweets
+  	begin
+    	tweet_array = cm.get_tweets
+   	rescue
+   		next
+   	end
     tweet_array.each do |t|
       cm.tweets << Tweet.create(tweet_id: t.id, content: t.text)
     end

@@ -55,6 +55,6 @@ end
 # delete_inactive_cm
 # total_cm
 
-# p Tweet.all
-# p Tweet.all
+# p CongressMember.where.not(twitter_id: "").count
+# Tweet.delete_all
 
