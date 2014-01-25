@@ -1,4 +1,5 @@
 require_relative 'models/congress_member'
+require_relative 'models/tweet'
 
 def cm_by_state(state)
   puts "Senators:"
@@ -53,3 +54,7 @@ end
 
 # delete_inactive_cm
 # total_cm
+
+# p Tweet.all
+# p Tweet.all
+

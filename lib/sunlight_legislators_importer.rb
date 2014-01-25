@@ -21,7 +21,7 @@ end
 
 
 
-# SunlightLegislatorsImporter.import(File.dirname(__FILE__) + "/../db/data/legislators.csv")
+SunlightLegislatorsImporter.import(File.dirname(__FILE__) + "/../db/data/legislators.csv")
 
 
 # IF YOU WANT TO HAVE THIS FILE RUN ON ITS OWN AND NOT BE IN THE RAKEFILE, UNCOMMENT THE BELOW
